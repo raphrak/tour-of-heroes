@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ng4-animations": {
+    "tour-of-heroes": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ng4-animations",
+            "outputPath": "dist/tour-of-heroes",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -50,18 +50,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ng4-animations:build"
+            "browserTarget": "tour-of-heroes:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "ng4-animations:build:production"
+              "browserTarget": "tour-of-heroes:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ng4-animations:build"
+            "browserTarget": "tour-of-heroes:build"
           }
         },
         "test": {
@@ -95,7 +95,7 @@
         }
       }
     },
-    "ng4-animations-e2e": {
+    "tour-of-heroes-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -103,11 +103,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "ng4-animations:serve"
+            "devServerTarget": "tour-of-heroes:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "ng4-animations:serve:production"
+              "devServerTarget": "tour-of-heroes:serve:production"
             }
           }
         },
@@ -123,5 +123,5 @@
       }
     }
   },
-  "defaultProject": "ng4-animations"
+  "defaultProject": "tour-of-heroes"
 }
