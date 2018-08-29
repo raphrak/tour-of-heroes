@@ -12,8 +12,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "start": "node index.js",
-    "postinstall": "ng build --aot -prod"
+    "postinstall": "ng build"
   },
   "dependencies": {
     "@angular/animations": "^6.0.3",
