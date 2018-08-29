@@ -1,15 +1,20 @@
 {
   "name": "tour-of-heroes",
-  "version": "0.0.0",
+  "description": "Angular 4 app deployed in Heroku",
+  "engines": {
+    "node": "8.9.1"
+  },
+  "main": "index.js",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "start": "node index.js",
+    "postinstall": "ng build --aot -prod"
   },
-  "private": true,
   "dependencies": {
     "@angular/animations": "^6.0.3",
     "@angular/common": "^6.0.3",
@@ -22,7 +27,9 @@
     "@angular/router": "^6.0.3",
     "core-js": "^2.5.4",
     "rxjs": "^6.0.0",
-    "zone.js": "^0.8.26"
+    "zone.js": "^0.8.26",
+    "typescript": "~2.7.2",
+    "express": "^4.15.2"
   },
   "devDependencies": {
     "@angular/compiler-cli": "^6.0.3",
@@ -43,6 +50,8 @@
     "karma-jasmine-html-reporter": "^0.2.2",
     "protractor": "~5.3.0",
     "ts-node": "~5.0.1",
-    "tslint": "~5.9.1"
+    "tslint": "~5.9.1",
+    "request": "^2.81.0",
+    "tape": "^4.7.0"
   }
 }
