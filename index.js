@@ -19,7 +19,8 @@ app.use(helmet.contentSecurityPolicy({
           '\'self\'',
           'blob:',
           '\'unsafe-eval\'',
-          'cdn.pubnub.com'
+          'cdn.pubnub.com',
+          '*.mapbox.com'
       ],
       'frame-ancestors': ['\'self\'']
   }

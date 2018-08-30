@@ -7,13 +7,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { HeroesComponent } from './heroes/heroes.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
+import { MapGLComponent } from './map-gl/map-gl.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
     HeroesComponent,
-    HeroDetailComponent
+    HeroDetailComponent,
+    MapGLComponent
   ],
   imports: [
     BrowserModule,
