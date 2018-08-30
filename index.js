@@ -19,7 +19,7 @@ app.use(helmet.contentSecurityPolicy({
           '\'self\'',
           'blob:',
           '\'unsafe-eval\'',
-          'https://cdn.pubnub.com/'
+          'cdn.pubnub.com'
       ],
       'frame-ancestors': ['\'self\'']
   }
