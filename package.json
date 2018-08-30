@@ -25,10 +25,12 @@
     "@angular/platform-browser-dynamic": "^6.0.3",
     "@angular/router": "^6.0.3",
     "core-js": "^2.5.4",
+    "express": "^4.15.2",
+    "lodash-es": "^4.17.10",
+    "pubnub": "^4.21.5",
     "rxjs": "^6.0.0",
-    "zone.js": "^0.8.26",
     "typescript": "~2.7.2",
-    "express": "^4.15.2"
+    "zone.js": "^0.8.26"
   },
   "devDependencies": {
     "@angular/compiler-cli": "^6.0.3",

@@ -27,3 +27,9 @@ h1 {
   nav a.active {
     color: #039be5;
   }
+  .users {
+    list-style-type: none;
+  }
+.users li img {
+  max-width: 30px;
+}
